@@ -1,6 +1,7 @@
 
 user = 'deploy'
-ip_address = '172.31.18.222'
+ip_address = 'ec2-54-213-252-167.us-west-2.compute.amazonaws.com'
+# ip_address = '172.31.18.222'
 
 
 role :app, ["#{user}@#{ip_address}"]
