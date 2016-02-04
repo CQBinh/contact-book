@@ -3,7 +3,7 @@ lock '3.4.0'
 set :application, 'contactbook'
 set :repo_url, 'git@github.com:CQBinh/contact-book.git'
 set :branch, :master
-set :deploy_to, '/home/deploy/contactbook'
+set :deploy_to, '/home/contactbook/deploy'
 set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
