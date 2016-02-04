@@ -32,6 +32,9 @@ server '172.31.18.222', user: 'deploy', roles: %w{web app db}
 # Feel free to add new variables to customise your setup.
 
 
+set :rails_env, 'production'
+
+set :bundle_flags, "--no-deployment"
 
 # Custom SSH Options
 # ==================
@@ -41,11 +44,10 @@ server '172.31.18.222', user: 'deploy', roles: %w{web app db}
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+ set :ssh_options, {
+   keys: %w(~/.ssh/contact-book.pem),
+   forward_agent: true,
+ }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
