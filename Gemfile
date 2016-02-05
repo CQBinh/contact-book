@@ -33,6 +33,6 @@ group :development do
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
-  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-unicorn-nginx', '~> 3.2.0'
 end
