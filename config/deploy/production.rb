@@ -18,6 +18,7 @@ set :bundle_flags, "--no-deployment"
  set :ssh_options, {
    keys: %w(~/.ssh/contact-book.pub),
    forward_agent: true,
+   port: 2222
  }
 
  set :nginx_server_name, 'contactbook.appconus.com'
