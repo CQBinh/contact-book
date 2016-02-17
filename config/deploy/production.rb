@@ -1,7 +1,6 @@
 
-user = 'ubuntu'
-# ip_address = 'ec2-54-213-252-167.us-west-2.compute.amazonaws.com'
-ip_address = '54.191.127.154'
+user = 'root'
+ip_address = '45.32.15.126'
 
 
 role :app, ["#{user}@#{ip_address}"]
@@ -17,7 +16,7 @@ set :rails_env, 'production'
 set :bundle_flags, "--no-deployment"
 
  set :ssh_options, {
-   keys: %w(~/.ssh/contact-book.pem),
+   keys: %w(~/.ssh/contact-book.pub),
    forward_agent: true,
  }
 
