@@ -1,5 +1,5 @@
 
-user = 'deploy'
+user = 'root'
 ip_address = '45.32.15.126'
 
 
