@@ -1,8 +1,18 @@
-production:
+default: &default
   adapter: postgresql
   encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: contactbook_development
+
+test:
+  <<: *default
+  database: contactbook_test
+
+production:
+  <<: *default
   database: contactbook_production
   username: contactbook
-  password: "1"
-  host: localhost
-  port: 5432
+  password: <%= ENV['CONTACTBOOK_DATABASE_PASSWORD'] %>
