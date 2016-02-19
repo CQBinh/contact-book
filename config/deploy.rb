@@ -11,7 +11,7 @@ set :keep_releases, 5
 set :rvm_type, :system
 set :rvm_ruby_version, 'ruby-2.2.3'
 set :nginx_config_path, '/etc/nginx/conf.d'
-
+set :unicorn_env, fetch(:rack_env, fetch(:rails_env, 'production'))
 namespace :deploy do
 
   desc 'Invoke a rake command'
