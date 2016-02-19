@@ -16,7 +16,7 @@ set :rails_env, 'production'
 set :bundle_flags, "--no-deployment"
 
  set :ssh_options, {
-   keys: %w(~/.ssh/contact-book.pub),
+   keys: %w(~/.ssh/vps-contactbook),
    forward_agent: true,
    port: 2222
  }
