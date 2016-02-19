@@ -15,4 +15,4 @@ production:
   <<: *default
   database: contactbook_production
   username: contactbook
-  password: <%= ENV['CONTACTBOOK_DATABASE_PASSWORD'] %>
+  password: 1
